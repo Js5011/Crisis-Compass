@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crisis Compass | Your Guide to Safety</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #173a5e;
+      --light-gray: #f4f6f8;
+      --mid-gray: #e0e4e8;
+      --text-dark: #1f2933;
+      --accent: #2c6fb7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      color: var(--text-dark);
+      background: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid var(--mid-gray);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--navy);
+    }
+
+    .brand img {
+      height: 42px;
+      width: auto;
+    }
+
+    .nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #f4f6f8 0%, #ffffff 100%);
+      padding: 5rem 1.5rem;
+    }
+
+    .hero-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      color: #4b5563;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      margin-left: 1rem;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.25rem;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .cards {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .about {
+      background: var(--light-gray);
+    }
+
+    .about-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 3rem 1.5rem;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    footer a {
+      color: #dbeafe;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="2.png" alt="Crisis Compass Logo" />
+      Crisis Compass
+    </div>
+    <nav>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">About</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>Your Guide Through Crisis</h1>
+      <p>Crisis Compass delivers clear, data-driven guidance to help communities, organizations, and leaders navigate emergencies with confidence and precision.</p>
+      <a href="#contact" class="btn">Get Started</a>
+      <a href="#solutions" class="btn secondary">Our Approach</a>
+    </div>
+  </div>
+</section>
+
+<section id="solutions">
+  <div class="section-title">
+    <h2>What We Do</h2>
+    <p>Simple, reliable tools designed for high-stakes decision making.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Crisis Mapping</h3>
+      <p>Visualize unfolding situations in real time with structured, easy-to-understand dashboards.</p>
+    </div>
+    <div class="card">
+      <h3>Decision Frameworks</h3>
+      <p>Evidence-based models that help leaders choose the safest, most effective actions.</p>
+    </div>
+    <div class="card">
+      <h3>Preparedness Planning</h3>
+      <p>Proactive planning tools that reduce uncertainty before a crisis even begins.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-grid">
+    <div>
+      <h2>About Crisis Compass</h2>
+      <p>Crisis Compass was created to bring clarity to chaos. Inspired by the reliability of a compass, our platform emphasizes direction, trust, and calm decision-making during critical moments.</p>
+    </div>
+    <div>
+      <h3>Our Values</h3>
+      <ul>
+        <li>Clarity over complexity</li>
+        <li>Safety-first decision making</li>
+        <li>Transparency and trust</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="section-title">
+    <h2>Resources</h2>
+    <p>Guides, research, and tools to help you stay prepared.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Emergency Playbooks</h3>
+      <p>Step-by-step response guides for common crisis scenarios.</p>
+    </div>
+    <div class="card">
+      <h3>Risk Assessment Tools</h3>
+      <p>Identify vulnerabilities before they escalate.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+    <p>Let’s build safer responses together.</p>
+  </div>
+  <div class="container" style="max-width:600px; text-align:center;">
+    <p>Email: contact@crisiscompass.org</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Crisis Compass</h3>
+      <p>Your guide to safety.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="copyright">© 2025 Crisis Compass. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
