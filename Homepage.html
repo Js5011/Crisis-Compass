@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crisis Compass | Your Guide to Safety</title>
+  <title>Crisis Compass | Guiding Communities Through Emergencies</title>
+
+  <meta name="description" content="Crisis Compass is a nonprofit initiative providing AI-powered guidance and lifesaving information during natural disasters and emergencies.">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --navy: #173a5e;
@@ -23,8 +27,8 @@
 
     body {
       color: var(--text-dark);
-      background: white;
-      line-height: 1.6;
+      background: #ffffff;
+      line-height: 1.65;
     }
 
     header {
@@ -32,7 +36,7 @@
       border-bottom: 1px solid var(--mid-gray);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
 
     .container {
@@ -58,17 +62,16 @@
 
     .brand img {
       height: 42px;
-      width: auto;
     }
 
-    .nav a {
-      margin-left: 1.5rem;
+    nav a {
+      margin-left: 1.75rem;
       text-decoration: none;
       color: var(--text-dark);
       font-weight: 500;
     }
 
-    .nav a:hover {
+    nav a:hover {
       color: var(--accent);
     }
 
@@ -95,8 +98,9 @@
 
     .hero p {
       font-size: 1.125rem;
-      margin-bottom: 2rem;
       color: #4b5563;
+      margin-bottom: 2rem;
+      max-width: 600px;
     }
 
     .btn {
@@ -117,12 +121,12 @@
     }
 
     section {
-      padding: 4rem 1.5rem;
+      padding: 4.5rem 1.5rem;
     }
 
     .section-title {
       text-align: center;
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
       margin-bottom: 3rem;
     }
@@ -145,12 +149,12 @@
       background: white;
       border-radius: 1rem;
       padding: 2rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
     }
 
     .card h3 {
       color: var(--navy);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
 
     .about {
@@ -169,7 +173,7 @@
     footer {
       background: var(--navy);
       color: white;
-      padding: 3rem 1.5rem;
+      padding: 3.5rem 1.5rem;
     }
 
     .footer-grid {
@@ -183,8 +187,8 @@
     footer a {
       color: #dbeafe;
       text-decoration: none;
-      display: block;
       margin-bottom: 0.5rem;
+      display: block;
     }
 
     .copyright {
@@ -195,60 +199,82 @@
     }
 
     @media (max-width: 900px) {
-      .hero-grid, .about-grid {
+      .hero-grid,
+      .about-grid {
         grid-template-columns: 1fr;
       }
+
       .hero h1 {
         font-size: 2.25rem;
       }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="container nav">
     <div class="brand">
-      <img src="Crisis-Compass-Logo.png" alt="Crisis Compass Logo" />
+      <img src="Crisis-Compass-Logo.png" alt="Crisis Compass logo" />
       Crisis Compass
     </div>
-    <nav>
-      <a href="#solutions">Solutions</a>
-      <a href="#about">About</a>
+    <nav aria-label="Main navigation">
+      <a href="#solutions">Our Work</a>
+      <a href="#about">Mission</a>
       <a href="#resources">Resources</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
+<main>
+
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <h1>Your Guide Through Crisis</h1>
-      <p>Crisis Compass delivers clear, data-driven guidance to help communities, organizations, and leaders navigate emergencies with confidence and precision.</p>
-      <a href="#contact" class="btn">Get Started</a>
-      <a href="#solutions" class="btn secondary">Our Approach</a>
+      <h1>Guiding Communities Through Crisis</h1>
+      <p>
+        Crisis Compass is a nonprofit initiative dedicated to providing
+        clear, reliable, and accessible guidance during natural disasters
+        and emergency situations—when timely information saves lives.
+      </p>
+      <a href="#contact" class="btn">Get Involved</a>
+      <a href="#solutions" class="btn secondary">How It Works</a>
     </div>
   </div>
 </section>
 
 <section id="solutions">
   <div class="section-title">
-    <h2>What We Do</h2>
-    <p>Simple, reliable tools designed for high-stakes decision making.</p>
+    <h2>What Crisis Compass Provides</h2>
+    <p>Practical tools designed for real-world emergency response.</p>
   </div>
+
   <div class="cards">
     <div class="card">
-      <h3>Crisis Mapping</h3>
-      <p>Visualize unfolding situations in real time with structured, easy-to-understand dashboards.</p>
+      <h3>AI-Guided Emergency Plans</h3>
+      <p>
+        An AI system uses neural pathfinding techniques to generate
+        personalized evacuation and safety plans based on user-provided
+        information such as age and frequently visited locations.
+      </p>
     </div>
+
     <div class="card">
-      <h3>Decision Frameworks</h3>
-      <p>Evidence-based models that help leaders choose the safest, most effective actions.</p>
+      <h3>Lifesaving Information Access</h3>
+      <p>
+        Clear summaries of critical safety instructions, designed to remain
+        understandable even when communication systems are limited or unstable.
+      </p>
     </div>
+
     <div class="card">
-      <h3>Preparedness Planning</h3>
-      <p>Proactive planning tools that reduce uncertainty before a crisis even begins.</p>
+      <h3>Preparedness for Underserved Regions</h3>
+      <p>
+        A focus on areas where emergency response infrastructure and accessible
+        guidance are often lacking, particularly in developing regions.
+      </p>
     </div>
   </div>
 </section>
@@ -256,15 +282,22 @@
 <section id="about" class="about">
   <div class="about-grid">
     <div>
-      <h2>About Crisis Compass</h2>
-      <p>Crisis Compass was created to bring clarity to chaos. Inspired by the reliability of a compass, our platform emphasizes direction, trust, and calm decision-making during critical moments.</p>
+      <h2>Our Mission</h2>
+      <p>
+        Crisis Compass was founded to address a critical gap in disaster response:
+        the lack of accessible, personalized guidance during emergencies.
+        Our goal is to empower individuals and communities with direction,
+        clarity, and trust when it matters most.
+      </p>
     </div>
+
     <div>
-      <h3>Our Values</h3>
+      <h3>Core Principles</h3>
       <ul>
-        <li>Clarity over complexity</li>
-        <li>Safety-first decision making</li>
-        <li>Transparency and trust</li>
+        <li>Public safety over profit</li>
+        <li>Clarity under pressure</li>
+        <li>Ethical and transparent AI use</li>
+        <li>Accessibility for all communities</li>
       </ul>
     </div>
   </div>
@@ -272,50 +305,62 @@
 
 <section id="resources">
   <div class="section-title">
-    <h2>Resources</h2>
-    <p>Guides, research, and tools to help you stay prepared.</p>
+    <h2>Educational Resources</h2>
+    <p>Preparedness materials designed for individuals, families, and communities.</p>
   </div>
+
   <div class="cards">
     <div class="card">
-      <h3>Emergency Playbooks</h3>
-      <p>Step-by-step response guides for common crisis scenarios.</p>
+      <h3>Disaster Response Guides</h3>
+      <p>Plain-language instructions for earthquakes, floods, wildfires, and other emergencies.</p>
     </div>
+
     <div class="card">
-      <h3>Risk Assessment Tools</h3>
-      <p>Identify vulnerabilities before they escalate.</p>
+      <h3>Risk Awareness Tools</h3>
+      <p>Identify potential hazards and plan safer evacuation strategies in advance.</p>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="section-title">
-    <h2>Contact Us</h2>
-    <p>Let’s build safer responses together.</p>
+    <h2>Contact Crisis Compass</h2>
+    <p>Partnerships, questions, and collaboration inquiries are welcome.</p>
   </div>
+
   <div class="container" style="max-width:600px; text-align:center;">
-    <p>Email: contact@crisiscompass.org</p>
+    <p><strong>Email:</strong> contact@crisiscompass.org</p>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="footer-grid">
     <div>
       <h3>Crisis Compass</h3>
-      <p>Your guide to safety.</p>
+      <p>A nonprofit initiative focused on emergency guidance and public safety.</p>
     </div>
+
     <div>
-      <h4>Company</h4>
-      <a href="#about">About</a>
-      <a href="#solutions">Solutions</a>
+      <h4>Organization</h4>
+      <a href="#about">Mission</a>
+      <a href="#solutions">Our Work</a>
     </div>
+
     <div>
       <h4>Support</h4>
       <a href="#resources">Resources</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
-  <div class="copyright">© 2025 Crisis Compass. All rights reserved.</div>
+
+  <div class="copyright">
+    © 2025 Crisis Compass. All rights reserved.
+  </div>
 </footer>
 
 </body>
+</html>
+
 </html>
